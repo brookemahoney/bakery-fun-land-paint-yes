@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🤖🎨 ROBOT ART STUDIO 🤖🎨 PAINT SPLATTER BOTS!!! 🤖🎨</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Playfair+Display:wght@400;700;900&family=Comfortaa:wght@400;600;700&family=Permanent+Marker&family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body style="background:#fff8f0;min-height:100vh;font-family:'Caveat',cursive;color:#2a1e0f;overflow-x:hidden;position:relative;">
+
+  <!-- PAINT SPLATTER BACKGROUND DECOR -->
+  <div style="position:absolute;top:5%;left:5%;width:120px;height:120px;border-radius:50%;background:#ff69b4;opacity:0.3;filter:blur(20px);pointer-events:none;z-index:0;"></div>
+  <div style="position:absolute;top:40%;left:85%;width:150px;height:150px;border-radius:50%;background:#4169e1;opacity:0.3;filter:blur(25px);pointer-events:none;z-index:0;"></div>
+  <div style="position:absolute;top:70%;left:10%;width:100px;height:100px;border-radius:50%;background:#ffd700;opacity:0.3;filter:blur(15px);pointer-events:none;z-index:0;"></div>
+  <div style="position:absolute;top:15%;left:70%;width:80px;height:80px;border-radius:50%;background:#ff1493;opacity:0.2;filter:blur(18px);pointer-events:none;z-index:0;"></div>
+
+  <!-- BANNER -->
+  <div style="position:relative;background:#2a1e0f;color:#fff;padding:15px 0;border-bottom:8px dashed #ffd700;border-top:8px dashed #ffd700;overflow:hidden;box-shadow:0 8px 25px rgba(42,30,15,0.4);z-index:10;">
+    <div style="font-family:'Permanent Marker',cursive;font-size:2rem;text-align:center;color:#ffd700;text-shadow:3px 3px #ff1493,2px 2px #fff;letter-spacing:0.2em;animation:paintSlide 15s linear infinite;white-space:nowrap;">
+      🤖🎨 PAINT SPLATTER BOTS 🤖🎨 MESSY ART IS THE BEST ART 🤖🎨 PAINT SPLATTER BOTS 🤖🎨
+    </div>
+  </div>
+
+  <!-- ROBOT ARTIST SVG -->
+  <header style="position:relative;text-align:center;padding:50px 20px 10px;overflow:hidden;z-index:10;">
+    <svg viewBox="0 0 500 350" style="width:85%;max-width:500px;height:auto;margin:0 auto;display:block;filter:drop-shadow(0 15px 35px rgba(255,105,180,0.4));">
+      <defs>
+        <filter id="paintSplash" x="-20%" y="-20%" width="140%" height="140%">
+          <feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="3" result="noise"/>
+          <feDisplacementMap in="SourceGraphic" in2="noise" scale="15" xChannelSelector="R" yChannelSelector="G"/>
+        </filter>
+      </defs>
+      <!-- CANVAS -->
+      <rect x="50" y="180" width="180" height="120" rx="5" fill="#fff" stroke="#2a1e0f" stroke-width="4"/>
+      <rect x="55" y="185" width="170" height="110" rx="3" fill="#fff8f5" stroke="#ffd700" stroke-width="2"/>
+      <!-- PAINT SPLASHES ON CANVAS -->
+      <circle cx="100" cy="230" r="25" fill="#ff69b4" opacity="0.7"/>
+      <circle cx="160" cy="210" r="18" fill="#4169e1" opacity="0.7"/>
+      <circle cx="120" cy="260" r="22" fill="#ffd700" opacity="0.7"/>
+      <circle cx="180" cy="250" r="15" fill="#ff1493" opacity="0.6"/>
+      <text x="140" y="250" text-anchor="middle" font-size="35" fill="#2a1e0f" opacity="0.4" font-family="serif">✦</text>
+      <!-- EASEL -->
+      <line x1="140" y1="300" x2="60" y2="280" stroke="#8b4513" stroke-width="8" stroke-linecap="round"/>
+      <line x1="140" y1="300" x2="220" y2="280" stroke="#8b4513" stroke-width="8" stroke-linecap="round"/>
+      <line x1="80" y1="285" x2="200" y2="285" stroke="#8b4513" stroke-width="5" stroke-linecap="round"/>
+      <!-- ROBOT HEAD -->
+      <rect x="300" y="60" width="120" height="90" rx="25" fill="#2a1e0f" stroke="#ffd700" stroke-width="5"/>
+      <!-- BERET -->
+      <ellipse cx="360" cy="70" rx="55" ry="20" fill="#ff1493" stroke="#ffd700" stroke-width="4"/>
+      <ellipse cx="360" cy="70" rx="35" ry="12" fill="#ffb6c1" stroke="#ffd700" stroke-width="2"/>
+      <!-- EYES -->
+      <circle cx="330" cy="100" r="14" fill="#fff" stroke="#ffd700" stroke-width="3"/>
+      <circle cx="390" cy="100" r="14" fill="#fff" stroke="#ffd700" stroke-width="3"/>
+      <circle cx="330" cy="100" r="7" fill="#ff1493"/>
+      <circle cx="390" cy="100" r="7" fill="#4169e1"/>
+      <!-- MOUTH -->
+      <path d="M340,120 Q360,135 380,120" fill="none" stroke="#ffd700" stroke-width="4" stroke-linecap="round"/>
+      <!-- BODY -->
+      <rect x="290" y="140" width="140" height="100" rx="20" fill="#ffd700" stroke="#2a1e0f" stroke-width="5"/>
+      <!-- PAINT SPLATTER ON BODY -->
+      <circle cx="330" cy="180" r="20" fill="#ff69b4" opacity="0.8"/>
+      <circle cx="390" cy="200" r="15" fill="#4169e1" opacity="0.8"/>
+      <circle cx="360" cy="220" r="18" fill="#ff1493" opacity="0.8"/>
+      <circle cx="310" cy="210" r="12" fill="#ff8c00" opacity="0.8"/>
+      <!-- PALETTE IN HAND -->
+      <rect x="410" y="170" width="50" height="35" rx="8" fill="#fff" stroke="#2a1e0f" stroke-width="3"/>
+      <circle cx="425" cy="185" r="8" fill="#ff1493" stroke="#2a1e0f" stroke-width="2"/>
+      <circle cx="445" cy="185" r="8" fill="#4169e1" stroke="#2a1e0f" stroke-width="2"/>
+      <circle cx="425" cy="200" r="8" fill="#ffd700" stroke="#2a1e0f" stroke-width="2"/>
+      <circle cx="445" cy="200" r="8" fill="#ff8c00" stroke="#2a1e0f" stroke-width="2"/>
+      <!-- ARM -->
+      <rect x="420" y="170" width="25" height="15" rx="5" fill="#ffd700" stroke="#2a1e0f" stroke-width="3"/>
+      <circle cx="445" cy="177" r="10" fill="#ffd700" stroke="#2a1e0f" stroke-width="2"/>
+      <!-- BRUSH -->
+      <line x1="455" y1="175" x2="490" y2="140" stroke="#2a1e0f" stroke-width="6" stroke-linecap="round"/>
+      <rect x="480" y="135" width="20" height="20" rx="3" fill="#ffd700" stroke="#2a1e0f" stroke-width="3"/>
+      <line x1="485" y1="130" x2="495" y2="110" stroke="#ff1493" stroke-width="4" stroke-linecap="round"/>
+      <circle cx="493" cy="105" r="8" fill="#ff69b4"/>
+      <!-- SPLASH FROM BRUSH -->
+      <circle cx="500" cy="100" r="20" fill="#ff1493" opacity="0.6"/>
+      <circle cx="510" cy="95" r="12" fill="#ffd700" opacity="0.6"/>
+      <circle cx="505" cy="115" r="15" fill="#4169e1" opacity="0.6"/>
+    </svg>
+
+    <h1 style="font-family:'Permanent Marker',cursive;font-size:4.5rem;color:#ff1493;text-shadow:3px 3px #ffd700,5px 5px #2a1e0f;margin-top:5px;letter-spacing:0.05em;animation:paintWobble 3s ease-in-out infinite;">
+      🤖🎨 PAINT SPLATTER BOTS 🎨🤖
+    </h1>
+    <h2 style="font-family:'Caveat',cursive;font-size:2rem;color:#2a1e0f;background:#ffd700;padding:12px 35px;border-radius:30px;display:inline-block;border:4px dashed #ff1493;box-shadow:0 8px 25px rgba(255,105,180,0.3);font-weight:bold;margin-top:10px;transform:rotate(-1deg);">
+      MESSY ART IS THE BEST ART!!! 🎨💖✨
+    </h2>
+  </header>
+
+  <!-- PAINT POEM -->
+  <section style="max-width:650px;margin:20px auto;padding:35px;background:#fff;border:6px dashed #ff1493;border-radius:25px;box-shadow:10px 10px 0 #ffd700,15px 15px 30px rgba(255,105,180,0.3);position:relative;text-align:center;transform:rotate(0.5deg);">
+    <div style="position:absolute;top:-20px;left:50%;transform:translateX(-50%);background:#ff1493;color:#fff;padding:8px 30px;border-radius:20px;font-family:'Permanent Marker',cursive;font-size:1.3rem;box-shadow:0 4px 15px rgba(255,105,180,0.5);">🎨 ART BOT POEM 🎨</div>
+    <p style="font-family:'Caveat',cursive;font-size:1.8rem;color:#2a1e0f;line-height:2;font-weight:bold;letter-spacing:0.03em;">
+      SPLASHES OF PINK AND GOLD AND BLUE!!!<br>
+      EVERY ROBOT MAKES ART FOR YOU!!!<br>
+      PAINT ON THE WALLS AND PAINT ON THE FLOOR!!!<br>
+      MESSY IS MAGIC AND WE WANT MORE!!! 🤖🎨💖
+    </p>
+  </section>
+
+  <!-- FEATURES -->
+  <section style="max-width:900px;margin:0 auto;padding:20px;display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:25px;">
+    <a href="index.html" style="text-decoration:none;display:block;background:#fff;border:5px dashed #ff69b4;border-radius:20px;padding:25px;text-align:center;box-shadow:8px 8px 0 #ff1493,0 10px 25px rgba(255,20,147,0.2);transition:transform 0.3s,box-shadow 0.3s;position:relative;overflow:hidden;" onmouseover="this.style.transform='translateY(-10px) rotate(2deg)';this.style.boxShadow='12px 12px 0 #ff1493,0 20px 40px rgba(255,20,147,0.35)'" onmouseout="this.style.transform='translateY(0) rotate(0deg)';this.style.boxShadow='8px 8px 0 #ff1493,0 10px 25px rgba(255,20,147,0.2)'">
+      <span style="font-size:4rem;display:block;margin-bottom:10px;">🤖</span>
+      <h3 style="font-family:'Permanent Marker',cursive;font-size:1.8rem;color:#ff1493;margin:5px 0;">SPLASH BOTS!!!</h3>
+      <p style="font-family:'Caveat',cursive;color:#2a1e0f;font-size:1.1rem;font-weight:bold;background:#fff8f5;padding:8px;border-radius:15px;border:2px solid #ffd1dc;">THROWING PAINT WITH HEARTS!!! 🎨💖</p>
+    </a>
+    <a href="magic.html" style="text-decoration:none;display:block;background:#fff;border:5px dashed #4169e1;border-radius:20px;padding:25px;text-align:center;box-shadow:8px 8px 0 #8a2be2,0 10px 25px rgba(65,105,225,0.2);transition:transform 0.3s,box-shadow 0.3s;position:relative;overflow:hidden;" onmouseover="this.style.transform='translateY(-10px) rotate(-2deg)';this.style.boxShadow='12px 12px 0 #8a2be2,0 20px 40px rgba(65,105,225,0.35)'" onmouseout="this.style.transform='translateY(0) rotate(0deg)';this.style.boxShadow='8px 8px 0 #8a2be2,0 10px 25px rgba(65,105,225,0.2)'">
+      <span style="font-size:4rem;display:block;margin-bottom:10px;">✨</span>
+      <h3 style="font-family:'Permanent Marker',cursive;font-size:1.8rem;color:#8a2be2;margin:5px 0;">SPARKLE PAINT!!!</h3>
+      <p style="font-family:'Caveat',cursive;color:#2a1e0f;font-size:1.1rem;font-weight:bold;background:#fff8f5;padding:8px;border-radius:15px;border:2px solid #d1d1ff;">GLITTER THAT NEVER ENDS!!! ✨🌈</p>
+    </a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer style="margin-top:60px;padding:40px 20px;text-align:center;background:#2a1e0f;color:#fff;border-top:8px dashed #ffd700;position:relative;overflow:hidden;box-shadow:inset 0 20px 40px rgba(255,215,0,0.15);">
+    <div style="font-size:4rem;margin-bottom:10px;animation:spin 8s linear infinite;display:inline-block;">🤖🎨</div>
+    <p style="font-family:'Permanent Marker',cursive;font-size:2.5rem;color:#ffd700;text-shadow:3px 3px #ff1493;margin:5px 0;letter-spacing:0.15em;">PAINT WITH YOUR BOT HEART!!! 🎨💖</p>
+    <p style="font-family:'Caveat',cursive;font-size:1.3rem;color:#fff;background:rgba(255,215,0,0.15);padding:10px 30px;border-radius:20px;border:3px dashed #ffd700;display:inline-block;margin-top:10px;font-weight:bold;">EVERY SPLATTER IS PURE LOVE!!! 🤖🎨✨</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <style>
+    @keyframes paintWobble { 0%,100%{transform:rotate(-1deg)} 50%{transform:rotate(2deg)} }
+    @keyframes paintSlide { from{transform:translateX(0)} to{transform:translateX(-50%)} }
+  </style>
+</body>
+</html>

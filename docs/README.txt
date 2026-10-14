@@ -1,0 +1,1 @@
+Done! The animated hearts are now spread across the bottom center with even spacing (gap: 32px), no longer clumped on the bottom left. Each heart has a staggered bounce delay (0.2s intervals) for a lively, sequential effect. The pink-purple theme remains intact throughout.
